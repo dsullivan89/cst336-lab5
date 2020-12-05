@@ -1,0 +1,26 @@
+{
+  "name": "cst336-lab5",
+  "version": "1.0.0",
+  "description": "Lab assignment for cst336",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsullivan89/cst336-lab5.git"
+  },
+  "author": "David Sullivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsullivan89/cst336-lab5/issues"
+  },
+  "homepage": "https://github.com/dsullivan89/cst336-lab5#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.1"
+  }
+}
