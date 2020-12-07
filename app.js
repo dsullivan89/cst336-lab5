@@ -15,9 +15,11 @@ app.get("/", async function(req, res) {
     let key = process.env.KEY;
     let secret = process.env.SECRET;
     let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${key}&featured=true&orientation=landscape`;
-    let response = await fetch(apiUrl);
+    let response = await fetch(apiUrl).then((data) =>
+        res.render("index", {"imageUrl": data.urls.small})
+        );
     let data = await response.json();
-    res.render("index", {"imageUrl": data.urls.small});
+    
 });
 
 app.get("/search", async function(req, res) {
