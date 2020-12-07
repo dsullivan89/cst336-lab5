@@ -68,7 +68,7 @@ app.get("/getKeywords",  function(req, res) {
   
   
 
-app.get("/api/updateFavorites", function(req, res){
+  app.get("/api/updateFavorites", function(req, res){
     let sql;
     let sqlParams;
     switch (req.query.action) {
@@ -86,6 +86,7 @@ app.get("/api/updateFavorites", function(req, res){
     });
       
   });//api/updateFavorites
+  
   
 
 if(PORT == 3000)

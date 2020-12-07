@@ -64,6 +64,5 @@ $(document).ready(function() {
 	  $("#favorites").append(htmlString);
 	  
 	 });//keywordLink
-	 
 
 });
